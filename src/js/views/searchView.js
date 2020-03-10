@@ -51,6 +51,6 @@ const renderRecipe = recipe => {
 };
 
 
-export const renderResults = recipes => {
+export const renderResults = (recipes, page = 1, resPerPage = 10) => {
 	recipes.forEach(renderRecipe);
 };
