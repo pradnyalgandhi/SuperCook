@@ -16,7 +16,6 @@ const controlSearch = async () => {
 		state.search = new Search(query);
 
 		//Prepar UI
-
 		searchView.clearInput();
 		searchView.clearResults();
 		renderLoader(elements.searchRes);
@@ -25,18 +24,26 @@ const controlSearch = async () => {
 		await state.search.getResults();
 
 		//Send it back to UI
-		//console.log(state.search.data);
 		clearLoader();
-		searchView.renderResults(state.search.data)
-
+		searchView.renderResults(state.search.data);
 
 	}
-}
+};
 
 elements.searchForm.addEventListener('submit', e => {
 	e.preventDefault();
 	controlSearch();
 });
+
+elements.searchResPages.addEventListener('click', e=>{
+	const btn = e.target.closest('.btn-inline');
+	if(btn){
+		const goToPage = parseInt(btn.dataset.goto, 10);
+		searchView.clearResults();
+		searchView.renderResults(state.search.data, goToPage);
+	}
+});
+
 
 
 
