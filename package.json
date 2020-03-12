@@ -8,7 +8,6 @@
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development --open"
   },
-
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -18,6 +17,7 @@
     "babel-loader": "^8.0.6",
     "babel-preset-env": "^1.7.0",
     "core-js": "^3.6.4",
+    "fractional": "^1.0.0",
     "html-webpack-plugin": "^3.2.0",
     "install": "^0.13.0",
     "npm": "^6.14.2",
@@ -26,7 +26,6 @@
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
   },
-  
   "dependencies": {
     "axios": "^0.19.2",
     "babel-polyfill": "^6.26.0"
