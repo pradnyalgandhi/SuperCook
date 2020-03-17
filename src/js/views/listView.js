@@ -1,6 +1,6 @@
 import {elements} from './base';
 
-export const renderitem = item =>{
+export const renderItem = item =>{
 
 	const markup = `
 
