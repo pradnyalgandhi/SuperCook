@@ -9,21 +9,22 @@
 - Renders Recipes and Ingredients.
 - Ingredients can be added to the shopping list.
 
-![alt txt](https://github.com/pradnyalgandhi/SuperCook/tree/master/dist/img/supercook.png "SuperCook")
+![alt txt](https://github.com/pradnyalgandhi/SuperCook/blob/master/dist/img/supercook.png "SuperCook")
 
 ## Installation
 
-1. Download node.js 
+1. Download node.js .
 [node.js](https://nodejs.org/en/download/)
 
-2. Navigate to your folder where you have extracted the repository & Install all the dependencies using the following command in the command prompt
+2. Navigate to your folder where you have extracted the repository & Install all the dependencies using the following command in the command prompt.
 ```bash
 npm install package.json
 ```
-3. ```bash 
+3. Run the webite locally. 
+```bash 
 npm run start
 ```
-4. The website will run on your local server 
+4. The website will run on your local server.
 
 ## Licence
 [MIT](https://choosealicense.com/licenses/mit/)
